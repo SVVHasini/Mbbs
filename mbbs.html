@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Find the best medical universities worldwide. Apply now!">
+    <title>Study MBBS Abroad</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <style>
+        body {
+            background-color: #e0d2c5; /* Beige */
+            font-family: "Times New Roman", serif;
+            font-style: italic;
+        }
+        .primary-color { background-color: #8B4513; } /* Brown */
+        .secondary-color { background-color: #F5F5DC; } /* Beige */
+        .text-primary { color: #8B4513; }
+        .text-secondary { color: #F5F5DC; }
+        #info:hover{border-color: #4d260b;}
+        #allowNow:hover{color: #F5F5DC;background-color: #4d260b;}
+        #topCountries:hover{color: #F5F5DC;background-color: #8B4513;cursor: pointer;}
+    </style>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Hero Section -->
+    <header class="primary-color text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="text-lg mt-2">Find the best medical universities worldwide. Apply now!</p>
+        <button id="allowNow" class="mt-4 secondary-color text-primary px-6 py-2 rounded-lg font-semibold">Apply Now</button>
+    </header>
+
+    <!-- Why Study MBBS Abroad -->
+    <section class="container mx-auto my-10 px-6">
+        <h2 class="text-2xl font-semibold text-center text-primary">Why Study MBBS Abroad?</h2>
+        <ul class="mt-4 space-y-2 text-lg">
+            <li>✅ Affordable tuition fees</li>
+            <li>✅ Globally recognized degrees</li>
+            <li>✅ No entrance exam required</li>
+            <li>✅ Modern infrastructure & facilities</li>
+        </ul>
+    </section>
+
+    <!-- Top Countries -->
+    <section class="container mx-auto my-10 px-6">
+        <h2 class="text-2xl font-semibold text-center text-primary">Top Countries for MBBS</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+            <div id="topCountries"class="p-4 secondary-color rounded shadow text-primary">Russia</div>
+            <div id="topCountries"class="p-4 secondary-color rounded shadow text-primary">Uzbekistan</div>
+            <div id="topCountries"class="p-4 secondary-color rounded shadow text-primary">Kazakhstan</div>
+            <div id="topCountries"class="p-4 secondary-color rounded shadow text-primary">Philippines</div>
+            <div id="topCountries"class="p-4 secondary-color rounded shadow text-primary">Georgia</div>
+            <div id="topCountries"class="p-4 secondary-color rounded shadow text-primary">Kyrgyzstan</div>
+            <div id="topCountries"class="p-4 secondary-color rounded shadow text-primary">Egypt</div>
+        </div>
+    </section>
+
+    <!-- Admission Process & Eligibility -->
+    <section class="container mx-auto my-10 px-6">
+        <h2 class="text-2xl font-semibold text-center text-primary">Admission Process & Eligibility</h2>
+        <ol class="mt-4 space-y-2 text-lg list-decimal pl-6">
+            <li>Choose your preferred university</li>
+            <li>Submit the application form</li>
+            <li>Receive admission confirmation</li>
+            <li>Apply for a student visa</li>
+            <li>Prepare for departure</li>
+        </ol>
+    </section>
+
+    <!-- Lead Generation Form -->
+    <section class="container mx-auto my-10 px-6 bg-white p-6 rounded shadow">
+        <h2 class="text-2xl font-semibold text-center text-primary">Get More Information</h2>
+        <form id="leadForm" class="mt-4">
+            <input id="info"type="text" placeholder="Your Name" class="w-full p-2 border rounded mb-2" required>
+            <input id="info"type="email" placeholder="Your Email" class="w-full p-2 border rounded mb-2" required>
+            <input id="info"type="tel" placeholder="Your Phone" class="w-full p-2 border rounded mb-2" required>
+            <select id="info"class="w-full p-2 border rounded mb-2" required>
+                <option value="">Select Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+            </select>
+            <button id="allowNow"type="submit" class="w-full primary-color text-white p-2 rounded">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your interest! We will get back to you soon.');
+        });
+    </script>
+
+</body>
+</html>
